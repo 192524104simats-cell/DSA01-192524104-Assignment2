@@ -1,0 +1,30 @@
+Q7 – Circular Array Design
+
+CLASS SavingsAccount
+
+    Store:
+        account number
+        balance
+        transactions[10]
+        front
+        rear
+        count
+
+    ADD TRANSACTION(amount):
+
+        IF count == 10:
+            Move front to next position using modulo 10
+            Decrease count
+
+        Move rear to next position using modulo 10
+        Store new transaction
+        Increase count
+
+    DISPLAY STATEMENT:
+
+        Display account number and balance
+
+        FOR each stored transaction:
+            Display transaction using circular position
+
+END CLASS

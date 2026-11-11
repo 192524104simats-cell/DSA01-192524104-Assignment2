@@ -1,0 +1,18 @@
+Q7 – Original vs Redesigned Comparison
+
+Test: 12 deposits (100 to 1200)
+
+Original Array:
+Final Balance: 12800
+Latest Transactions: 300 to 1200
+Shifting: 18 element assignments
+
+Circular Array:
+Final Balance: 12800
+Latest Transactions: 300 to 1200
+Shifting: 0 element assignments
+
+Result:
+Both programs produce the same correct output.
+The circular array avoids shifting elements when full.
+Insertion takes O(1) time in the redesigned version.

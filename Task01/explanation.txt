@@ -1,0 +1,28 @@
+Q1 - Explanation
+
+1. Call by Value:
+A copy of the variable is passed. Original value remains unchanged.
+
+2. Call by Reference:
+The original variable is modified directly.
+
+3. Call by Pointer:
+The address of the variable is passed. The original value is modified using *.
+
+4. Return by Reference:
+The bigger() function returns a reference to the larger variable.
+So, bigger(a,c) = 100 changes the larger variable c to 100.
+
+5. Default Arguments:
+The show() function uses default values y = 5 and z = 10 when arguments are missing.
+
+6. Fee Calculation:
+Original fee = 45000
+10% concession = 4500
+Final fee = 40500 for reference, pointer and return methods.
+
+7. Time Complexity:
+O(1) - Constant time.
+
+8. Space Complexity:
+O(1) - Constant space.

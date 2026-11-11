@@ -1,0 +1,13 @@
+Account Number: 101
+Balance: 12800
+Last Transactions:
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200

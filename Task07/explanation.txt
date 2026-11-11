@@ -1,0 +1,42 @@
+Q7 – Diagnose, Redesign and Validate
+
+1. Original Limitation:
+The original SavingsAccount program uses a normal array.
+When the array becomes full, it shifts all transactions
+to remove the oldest transaction.
+
+2. Design Objective:
+Store only the latest 10 transactions without shifting
+all elements whenever a new transaction is added.
+
+3. Redesigned Solution:
+A circular array is used.
+The front and rear positions move using modulo (%) operation.
+When the array is full, the oldest transaction is removed.
+
+4. C++ Feature Used:
+Arrays, classes, member functions and modulo operator.
+
+5. Memory:
+The circular array uses the same fixed memory of 10 elements.
+No additional dynamic memory is required.
+
+6. Validation:
+12 deposits were performed.
+The program displayed only the latest 10 transactions.
+Transactions 100 and 200 were removed.
+The final balance was 12800.
+
+7. Complexity:
+Original array: O(n) when shifting transactions.
+Circular array: O(1) when adding a transaction.
+Displaying transactions: O(10), which is O(1) for fixed capacity.
+
+8. Trade-off:
+The circular array is slightly more difficult to understand.
+However, it avoids shifting elements and is efficient
+when transactions are added frequently.
+
+Conclusion:
+The redesigned circular array successfully stores the
+latest 10 transactions and improves insertion efficiency.

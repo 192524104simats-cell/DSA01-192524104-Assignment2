@@ -1,0 +1,21 @@
+Q7 – Prediction
+
+After 12 deposits of 100, 200, 300, ... 1200:
+
+Expected balance: 12800
+
+Expected last 10 transactions:
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200
+
+Prediction:
+The circular array should automatically overwrite the oldest
+transactions and retain only the latest 10 transactions.

@@ -1,0 +1,22 @@
+Q3 – Default Arguments and Function Overloading
+
+1. Function overloading allows multiple functions to have the same name with different parameters.
+
+2. The compiler selects the correct function based on the argument type and number.
+
+3. In this program:
+   - charge(2) selects the integer overload.
+   - charge(2.0f) selects the double overload through float-to-double promotion.
+   - charge(2.5) selects the double overload.
+   - charge(500) selects the integer overload.
+   - charge(2.0, true) selects the double overload with express delivery.
+   - charge(p) selects the Parcel overload.
+
+4. Default arguments must be provided from right to left. Once a parameter has a default value, all parameters after it must also have default values.
+
+5. The original overloaded functions could cause ambiguity because multiple functions could accept the same call using default arguments.
+
+6. An alternative is to use a Parcel structure with additional fields for express delivery and insurance.
+
+7. Time Complexity: O(1) per function call.
+   Space Complexity: O(1) extra space per call.

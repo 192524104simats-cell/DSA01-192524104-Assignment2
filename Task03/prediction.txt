@@ -1,0 +1,6 @@
+Integer weight: 2 grams
+Weight: 2 kg
+Weight: 2.5 kg
+Integer weight: 500 grams
+Weight: 2 kg Express
+Parcel weight: 3.5 kg

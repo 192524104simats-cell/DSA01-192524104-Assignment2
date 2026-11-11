@@ -1,0 +1,25 @@
+Q6 – Friend Functions and Inline Functions
+
+1. A friend function is not a member of the class, but it can access private and public members.
+
+2. minutesBetween() calculates the absolute difference between two times in minutes.
+
+3. earlier() checks whether the first time is earlier than the second time.
+
+4. Friend functions are useful when two objects are compared equally.
+
+5. A member function is called using an object, but a friend function is called like a normal function.
+
+6. Inline functions are small functions for which the compiler may replace the function call with the function body.
+
+7. Inline does not guarantee that the compiler will replace every function call.
+
+8. Making private members public would reduce data protection and encapsulation.
+
+9. An alternative is to use member functions or public getter functions. These can provide controlled access to the private data.
+
+10. Both friend and member function approaches take O(1) time for each comparison.
+
+11. Space Complexity: O(1) extra space per call.
+
+12. Friend functions are suitable here because they compare two Time objects equally while keeping their data private.

@@ -1,0 +1,30 @@
+Q4 – Savings Account Mini-Statement
+
+1. The SavingsAccount class contains private data members:
+   - Account number
+   - Balance
+   - Array of 10 transactions
+   - Transaction count
+
+2. The deposit() function adds money to the account.
+
+3. The withdraw() function subtracts money if sufficient balance is available.
+
+4. The miniStatement() function displays the account number, balance and transactions.
+
+5. The transaction array is private to protect account information and prevent direct modification.
+
+6. When the 11th transaction arrives, the oldest transaction is removed by shifting the remaining elements.
+
+7. Shifting takes O(k) time, where k is the number of stored transactions.
+
+8. A circular array uses a start index to overwrite the oldest transaction in O(1) time.
+
+9. If the bank wants to store 50 transactions, the array size can be changed from 10 to 50. A circular buffer makes this easier to manage.
+
+10. An alternative is std::deque, which supports push_back() and pop_front() operations.
+
+Time Complexity:
+- Deposit/withdraw: O(k) when shifting is required.
+- Mini statement: O(k).
+- Space Complexity: O(10), or O(k) for k stored transactions.

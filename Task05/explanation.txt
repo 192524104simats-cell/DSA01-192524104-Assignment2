@@ -1,0 +1,35 @@
+Q5 – Static Members and Arrays of Objects
+
+1. Static data members belong to the entire class and are shared by all objects.
+
+2. In the Token class, the static variable next starts at 100.
+
+3. Every time a Token object is created, the constructor increases next by 1.
+
+4. Four Token objects are created: three in the array and one extra object.
+
+5. Therefore, the IDs are 101, 102, 103 and 104.
+
+6. The issued() static function returns the number of tokens issued.
+
+7. In the BusTicket class, issued and CAPACITY are static members.
+
+8. The issued variable keeps track of the number of seats given.
+
+9. The maximum capacity is 3. The fourth ticket is placed on the waiting list.
+
+10. Static data members are defined outside the class using the scope resolution operator (::).
+
+11. A static member function cannot use this because it belongs to the class, not an individual object. It cannot directly access non-static members.
+
+12. An array of objects can be created to store multiple BusTicket objects.
+
+13. Every object created increases the shared count until the capacity is reached.
+
+Alternative Concept:
+A separate TicketCounter class could manage seat numbers and waiting-list entries.
+
+Time Complexity:
+- Creating one ticket: O(1).
+- Printing all tickets: O(n).
+- Space Complexity: O(n) for n ticket objects.

@@ -1,0 +1,19 @@
+Q6 – Inline and Non-Inline Timing Results
+
+Number of function calls: 10,000,000
+
+Without optimization (-O0):
+Inline time: 73969 microseconds
+Non-inline time: 58534 microseconds
+
+With optimization (-O2):
+Inline time: 32841 microseconds
+Non-inline time: 25789 microseconds
+
+Both versions produced the same result: 2400000400.
+
+Observation:
+Optimization reduced the execution time of both versions.
+The non-inline version was faster in this experiment.
+Inline functions do not always guarantee better performance.
+The actual result depends on compiler optimization and function-call overhead.

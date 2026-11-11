@@ -1,0 +1,18 @@
+1. highestMark() returns a reference to the highest mark.
+   It allows us to modify the original array value.
+
+2. highestMarkConst() returns a constant reference.
+   It allows reading but prevents modification.
+
+3. highestMarkCopy() returns a copy.
+   Changes to the copy do not affect the original array.
+
+4. dangerousFunction() returns a reference to a local variable.
+   This is unsafe because the local variable is destroyed
+   when the function ends. The compiler gives a warning.
+
+5. An alternative is to return the index of the highest mark
+   instead of returning a reference.
+
+Time Complexity: O(n)
+Space Complexity: O(1)

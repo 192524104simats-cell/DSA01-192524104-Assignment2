@@ -1,0 +1,9 @@
+Expected Output:
+
+1 12 13
+1 100
+16 13 6
+Call by value: 45000
+Call by reference: 40500
+Call by pointer: 40500
+Return new fee: 40500
